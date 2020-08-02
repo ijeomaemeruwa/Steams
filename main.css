@@ -4,14 +4,10 @@
     padding: 0;
 }
 
-
-h2 {
-    font-family: 'Dancing Script', cursive; 
-}
-
-h3, h4, h5, h6, li {
+h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     max-width: 100%;
+    letter-spacing: 1px;
 }
 
 p, small {
@@ -93,7 +89,7 @@ hr {
 .grid-cards h2 {
    letter-spacing: 1px;
 }
-/*
+
 .grid-row {
     margin: 3rem auto;
     display: flex;
@@ -105,17 +101,15 @@ hr {
 }
 
 
-/* Services */
-.service-icons img {
-    width: 70px;
+/*Dining-Content*/
+.dining-content {
+    padding: 25px;
 }
 
 /*Blog Section*/
 .blog-section {
-    margin-top: 3rem;
+    margin: 3rem 0 10rem 0;
     text-align: center;
-    height: 100%;
-    width: 100%;
 }
 
 /*Footer*/
@@ -127,17 +121,27 @@ hr {
     color: #fefffe;
 }
 
+.footer-content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+}
+
 .footer-icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .fa {
     border: 2px solid #e2072a;
     padding: 15px;
     border-radius: 10px;
+    margin: 1em;
+}
+
+.fa:hover {
+    background: #e2072a;
+    color: #fefffe;
 }
 
 
@@ -145,6 +149,7 @@ hr {
 .btn-1 {
     border-radius: 15px !important;
     background: #e2072a !important;
+    color: #fefffe !important;
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem !important;
     letter-spacing: 1px;
@@ -164,9 +169,23 @@ hr {
     margin-top: 1rem;
 }
 
+
 /* Media Queries */
 
 @media (max-width: 480px) {
+
+    h2 {
+        font-size: 2rem;  
+    }
+
+    p {
+        font-size: 0.8rem;   
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
     .grid-row {
     display: flex;
     flex-direction: column;
@@ -185,17 +204,14 @@ hr {
         line-height: none;
     }
 
-    h4 {
-        font-size: 1rem;
-    }
-
     .grid-cards h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
+
     .fa {
-        padding: 20px;
         border: none;
+        margin: 0.3em;
     }
     
 }
